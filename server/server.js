@@ -7,7 +7,6 @@ const requestListener = (req, res) => {
     var name;
     req.on("data", (chunk) => (name = chunk.toString(`utf-8`)));
     req.on("end", () => {
-      
       let funny = [];
 
       for (let i = 0; i < name.length; i++) {
